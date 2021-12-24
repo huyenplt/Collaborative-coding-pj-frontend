@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/editor-styles.css">
+    <title>Collaborative coding</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="header__wrapper">
+            <div class="header--left">
+                Collaborative coding 
+            </div>
+            <div class="header--right">
+                <div class="btn-share">Share+</div>
+                <div class="avatar"></div>
+            </div>
+        </div>
+    </section>
+    <section class="main--content">
+        <div class="main__wrapper">
+            <div class="editor">
+                <div class="editor__wrapper">
+                    <div class="editor__body">
+                        <div id="editorCode" class="editor__code">
+        
+                        </div>
+                    </div>
+                    <div class="editor__footer">
+                        <div class="editor__footer--left">
+                            <button class="editor__btn editor__run">Run</button>
+                            <button class="editor__btn editor__reset">Reset</button>
+                        </div>
+                        <div class="editor__footer--right">
+                            <div class="editor__console">
+                                <ul class="editor__console-logs">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings">
+                Settings các thứ
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Ace Libraries -->
+    <script src="lib/js/ace-editor/src-min/ace.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="lib/js/editor.js"></script>
+    <script src="lib/js/editor-console.js"></script>
+</body>
+
+</html>
